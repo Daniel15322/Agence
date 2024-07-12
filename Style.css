@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 5%;
+}
+header .logo{
+    font-size: 25px;
+}
+header .logo span{
+    color: #f3b408;
+}
+header .menu a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    color: #999;
+    transition: 0.5s;
+}
+header .menu a:before{
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #d6cf93;
+    transition: 0.5s;
+}
+header .menu a:hover:before {
+    width: 100%;
+}
+header .menu a:hover{
+    color: #000;
+}
+.home {
+    height: 610px;
+    background-image: url("image/T4.jpg");
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    display: flex;
+    padding-left: 5%;
+    padding-bottom: 50px;
+}
+.home-infos{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 50px;
+    animation: anime 2s linear;
+}
+
+
+@keyframes anime{
+    from{
+        transform: translateX(-450px);
+    }
+}
+.home-infos h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.home-infos p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.home-infos a{
+    text-decoration: 0;
+    border: 2px solid #d6cf93;
+    color:#d6ca93;
+    border-radius: 6px;
+    padding: 5px 20px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.home-infos a:hover{
+    background-color: #d6d593;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.services {
+    height: 610px;
+    background-image: url("image/T2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.services{
+    padding: 0 10%;
+}
+.title{
+    text-align: center;
+    color: #069cf3;
+    margin-top: 50px;
+    font-size: 35px;ss
+    letter-spacing: 1px;
+}
+.sub-title{
+    text-align: center;
+    color: #e4970a;
+    margin: 20px 0;
+}
+.list-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.list-services .box{
+    padding: 30px;
+    background-color: #f3fbfa;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-services .box h1{
+    text-transform: uppercase;
+    color: #d6d593;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-services .box p{
+    font-size: 16px;
+}
+.list-services .box:hover{
+    background-color: #d6cc93;
+}
+.list-services .box:hover h1{
+    color: #fff;
+}
+.list-services .box:hover p{
+    color: #333;
+}
+.Decanatinfo {
+    height: 610px;
+    background-image: url("image/2022-01-24.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.Decanatinfo{
+    padding: 0 10%;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.sub-title{
+    text-align: center;
+    color: #000;
+    margin: 20px 0;
+}
+.list-Decanatinfo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.list-Decanatinfo .box{
+    padding: 30px;
+    background-color: #f3fbfa;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-Decanatinfo .box h1{
+    text-transform: uppercase;
+    color: #323636;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-Decanatinfo .box p{
+    font-size: 16px;
+}
+.list-Decanatinfo .box:hover{
+    background-color: #d6ca93;
+}
+.list-Decanatinfo .box:hover h1{
+    color: #fff;
+}
+.list-Decanatinfo .box:hover p{
+    color: #333;
+}
+.Decanatinfo .title.box h1 a{
+    text-transform: uppercase;
+    color: #d6d193;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.Facultés {
+    height: 610px;
+    background-image: url("image/T1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.Facultés{
+    padding: 0 10%;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.sub-title{
+    text-align: center;
+    color: #351d03;
+    margin: 20px 0;
+}
+.list-Facultés{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.list-Facultés .box{
+    padding: 30px;
+    background-color: #f3fbfa;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-Facultés .box h1{
+    text-transform: uppercase;
+    color: #323636;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-Facultés .box p{
+    font-size: 16px;
+}
+.list-Facultés .box:hover{
+    background-color: #d6ca93;
+}
+.list-Facultés .box:hover h1{
+    color: #fff;
+}
+.list-Facultés .box:hover p{
+    color: #333;
+}
+.Temoignage{
+    background-image: url(./image/T7.jpg);
+    background-size: cover;
+}
+.Temoignage .titre-texte {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.Temoignage .titre-texte span {
+    text-align: center;
+    color: #d6c493;
+    margin: 20px 0;
+}
+.Temoignage .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+.Temoignage .contenu .box{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+.Temoignage .contenu .box .imbox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.Temoignage .contenu .box .imbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+.Temoignage .contenu .box .text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+
+}
+.Temoignage .contenu .box .text h3{
+    color: #d6c693;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+
+}
+.Temoignage .contenu .box .text p{
+    color: #000;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+
+}
+.formulaire{
+    background-image: url(./image/T4.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.formulaire .titre-texte span{
+    text-align: center;
+    color: #d6cc93;
+    margin: 20px 0;
+}
+.formulaire .titre-texte {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.formulaireform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgb(0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+.formulaireform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formulaireform .inputboite i{
+    position:absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+.formulaireform .inputboite small{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    visibility: hidden;
+}
+.formulaireform .inputboite.succes input{
+    border-color: #d6cc93;
+}
+.formulaireform .inputboite.error input{
+    border-color: #e74c3c;
+    visibility: visible;
+}
+.formulaireform .inputboite.succes i.fa-check-circle{
+    color: #d6d193;
+    visibility: visible;
+}
+.formulaireform .inputboite.error i.fa-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+.formulaireform .inputboite.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.formulaireform .inputboite input, 
+.formulaireform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.formulaireform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #d6d593;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    height: 610px;
+    background-image: url(./image/T3.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.contact .titre-texte span{
+    text-align: center;
+    color: #d6c693;
+    margin: 20px 0;
+}
+.contact .titre-texte {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgb(0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputboite input, 
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactform .inputboite i{
+    position:absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+.contactform .inputboite small{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    visibility: hidden;
+}
+.inputboite.succes input{
+    border-color: #d6cf93;
+}
+.inputboite.error input{
+    border-color: #e74c3c;
+    visibility: visible;
+}
+.inputboite.succes i.fa-check-circle{
+    color: #d6d193;
+    visibility: visible;
+}
+.inputboite.error i.fa-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+.inputboite.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #d6d193;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.copyright{
+    padding: 20px 20px;
+    border-top: 2px solid rgb(0, 0, 0.1);
+    background: rgb(250, 240, 187);
+    text-align: center;
+}
+.copyright p:nth-child(1){
+    color: #333;
+}
+.copyright a{
+    color: #eec407;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: italic;
+}
+.Apparitorat {
+    height: 610px;
+    background-image: url(./image/T6.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgb(0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.Apparitorat.title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.Apparitorat .sub-title{
+    text-align: center;
+    color: #000;
+    margin: 20px 0;
+}
+.list-Apparitorat{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.list-Apparitorat .box{
+    padding: 30px;
+    background-color: #f3fbfa;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.list-Apparitorat .box h1{
+    text-transform: uppercase;
+    color: #323636;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-Apparitorat .box p{
+    font-size: 16px;
+}
+.list-Apparitorat .box:hover{
+    background-color: #d6ca93;
+}
+.list-Apparitorat .box:hover h1{
+    color: #fff;
+}
+.list-Apparitorat .box:hover p{
+    color: #333;
+}
