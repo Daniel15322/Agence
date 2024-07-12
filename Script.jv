@@ -1,0 +1,76 @@
+const form = document.querySelector("#form");
+const nom = document.querySelector("#nom");
+const email = document.querySelector("#email");
+
+form.addEventListener('submit',e=>{
+    form_verify();
+    e.preventDefault();
+})
+
+function form_verify() {
+    const uservalue = nom.value.trim();
+    const emailvalue = email.value.trim();
+
+    if (uservalue === ""){
+        let message = "nom ne peut pas etre vide";
+        setError(nom,message)
+    }else if (!uservalue.match(/^[a-zA-Z]/)){
+        let message = "le nom doit commencer par une lettre";
+        setError(nom,message)
+    }else{
+        let letterNum = uservalue.length;
+        if (letterNum < 3){
+            let message = "le nom doit avoir au moins 3 caractére";
+            setError(nom,message)
+        }else {
+            setsucces(nom);
+        }
+    }
+
+
+    if (emailvalue === ""){
+        let message = "email ne peut pas etre vide";
+        setError(email,message)
+    }else if (!email_verify(emailvalue)){
+        let message = "Email non valide";
+        setError(email,message)
+   
+    }else {
+        setsucces(email)
+    }
+
+    if (prevaluevalue === ""){
+        let message = "nom ne peut pas etre vide";
+        setError(prenom,message)
+    }else if (!prevalue.match(/^[a-zA-Z]/)){
+        let message = "le nom doit commencer par une lettre";
+        setError(prenom,message)
+    }else{
+        let letterNum = prevalue.length;
+        if (letterNum < 3){
+            let message = "le nom doit avoir au moins 3 caractére";
+            setError(prenom,message)
+        }else {
+            setsucces(prenom);
+        }
+    }
+}
+
+function setError(elem,message){
+    const inputboite = elem.parentElement;
+    const small = inputboite.querySelector('small');
+
+    small.innerText = message
+
+    inputboite.className = "inputboite error"
+}
+
+function setsucces(elem) {
+    const inputboite = elem.parentElement;
+    inputboite.className = 'inputboite succes'
+}
+
+
+function email_verify(email){
+    return /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/.test(email);
+}
